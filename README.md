@@ -4,7 +4,7 @@ AutoTaxonomyExtractionAndTagging
 
 To start Solr:
 ```
-cd solr_example_dir
+cd apache-solr-x.x.x/example
 java -jar -Dsolr.solr.home=<full_path_to_this_dir>/solr_home start.jar
 ```
 
