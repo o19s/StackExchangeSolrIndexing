@@ -2,14 +2,19 @@ Getting Started
 ===============
 
 1. Download a StackExchange dump of your choosing: http://www.clearbits.net/torrents/2076-aug-2012
-2. Download Solr: http://lucene.apache.org/solr/
-3. Start Solr:
+1. Unzip the data set you're interested in (7-zip format)
+1. Download Solr: http://lucene.apache.org/solr/
+1. Start Solr:
 ```
 cd apache-solr-x.x.x/example
 java -jar -Dsolr.solr.home=<full_path_to_this_dir>/solr_home start.jar
 ```
-4. Index documents (currently only works for posts):
+1. Index documents (currently only works for posts):
 ```
 python extractDocs.py "<full_path_to_stack_exchange_dump>/posts.xml" | curl -d @- http://localhost:8983/solr/update?commit=true -v -H "Content-Type:text/xml"
 ```
-Configuration details in solr_home/collection1/conf/schema.xml
+(Configuration details can be found in solr_home/collection1/conf/schema.xml)
+1. Search!
+```
+localhost:8983/solr/collection1/select?q=Tags:java
+```
