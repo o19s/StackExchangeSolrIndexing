@@ -102,6 +102,10 @@
    <field name="PostTypeId" type="string" indexed="true" stored="true" omitNorms="true"/>
    <field name="AcceptedAnswerId" type="string" indexed="true" stored="true" omitNorms="true"/>
    <field name="CreationDate" type="date" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationMonth" type="string" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationDay" type="string" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationHour" type="int" indexed="true" stored="true" omitNorms="true"/>
+   <field name="CreationMinute" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="Score" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="ViewCount" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="Body" type="text_en" indexed="true" stored="true" omitNorms="true"/>
@@ -115,7 +119,6 @@
    <field name="AnswerCount" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="CommentCount" type="int" indexed="true" stored="true" omitNorms="true"/>
    <field name="FavoriteCount" type="int" indexed="true" stored="true" omitNorms="true"/>
-
 
 
 
