@@ -17,8 +17,12 @@ java -jar -Dsolr.solr.home=<full_path_to_this_dir>/solr_home start.jar
 python extractDocs.py "<full_path_to_stack_exchange_dump>/posts.xml"
 ```
 (Configuration details can be found in solr_home/collection1/conf/schema.xml)
+1. Commit the changes
+```
+http://localhost:8983/solr/update?commit=true
+```
 1. Search!
 ```
 localhost:8983/solr/collection1/select?q=Tags:star-wars
 ```
-1. And for a neat visual, try `file://localhost<full_path_to_this_dir>/plot.html?q=OwnerUserId:22656&fq=PostTypeId:2` in your browser
+1. And for a neat visual, try `file://localhost<full_path_to_this_dir>/plot.html?q=*:*` in your browser
