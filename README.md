@@ -1,8 +1,11 @@
 Getting Started
 ===============
 
-1. Download a StackExchange dump of your choosing: http://www.clearbits.net/torrents/2076-aug-2012
-1. Unzip the data set you're interested in (7-zip format)
+1. Download a StackExchange dump of your choosing:
+   http://www.clearbits.net/torrents/2076-aug-2012 (or the start
+immediatly with the posts.xml.gz file)
+1. Unzip the data set you're interested in (7-zip format) Or `gunzip
+   posts.xml.gz`
 1. Download Solr: http://lucene.apache.org/solr/
 1. Start Solr:
 ```
