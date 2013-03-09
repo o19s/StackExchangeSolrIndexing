@@ -26,3 +26,5 @@ http://localhost:8983/solr/update?commit=true
 localhost:8983/solr/collection1/select?q=Tags:star-wars
 ```
 1. And for a neat visual, try `file://localhost<full_path_to_this_dir>/plot.html?q=*:*` in your browser
+
+If you want git to stop bothering you about the gunzipped and therefore missing post.xml.gz file, try `git update-index --assume-unchanged -z posts.xml.gz`
