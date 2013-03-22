@@ -10,7 +10,7 @@ immediatly with the posts.xml.gz file)
 1. Start Solr:
 ```
 cd apache-solr-x.x.x/example
-java -jar start.jar -Dsolr.solr.home=<full_path_to_this_dir>/solr_home
+java -jar -Dsolr.solr.home=<full_path_to_this_dir>/solr_home start.jar
 ```
 1. Index documents (currently only works for posts):
 ```
